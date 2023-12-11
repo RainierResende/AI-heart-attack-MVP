@@ -1,0 +1,150 @@
+body,
+ul,
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 222, 199);
+}
+
+header {
+    background-color: rgb(225, 222, 199);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    background-color: rgb(35, 32, 24);
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.newItem {
+    background-color: rgb(225, 222, 199);
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    height: 32px
+}
+
+input#newRestecg{
+    width: 190px;
+}
+
+input#newTrestbps, #newFbs, #newCa, #newInput{
+    width: 130px;
+}
+
+input#newChol, #newCp, #newOldpeak, #newSlope, #newThal{
+    width: 100px;
+}
+
+input#newAge, #newSex, #newExang{
+    width: 60px;
+}
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addBtn:hover {
+    background-color: rgb(67, 63, 51);
+    color: white;
+}
+
+.items {
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    width: 80px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+    padding: 12px 10px;
+    font-size: 12px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+th img{
+    transition: 0.3s;
+}
+
+th:nth-child(16){
+    cursor: pointer;
+}
+
+th img:hover {
+    width: 20px;
+    height: 20px;
+}
+
+table{
+    background-color: white;
+    width: 100%;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 130px;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+
+.close {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+    cursor: pointer;
+}

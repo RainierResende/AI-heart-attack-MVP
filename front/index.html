@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/heart.png" type="image/x-icon">
+
+    <title>AI Heart Attack Diagnostic</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>AI Heart Attack Diagnostic</h2>
+            <br>
+            <p>Sistema para diagnosticar a chance de ataque cardíaco: 
+                <br>0 para menor chance de ataque cardíaco e 1 para maior chance de ataque cardiáco
+                <br>Sexo: 0 para Feminino e 1 para Masculino</p>
+            <p>Preencha os campos abaixo com os dados do paciente e clique em "Diagnosticar".</p>
+        </div>
+
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newAge" placeholder="Idade">
+        <input type="text" id="newSex" placeholder="Sexo">
+        <input type="text" id="newCp" placeholder="Dor no peito">
+        <input type="text" id="newTrestbps" placeholder="Pressão Sanguínea">
+        <input type="text" id="newChol" placeholder="Colesterol sérico">
+        <input type="text" id="newFbs" placeholder="Açucar no sangue">
+        <input type="text" id="newRestecg" placeholder="Resultados eletrocardiográficos">
+    </section>
+    <section class="newItem">
+        <input type="text" id="newThalach" placeholder="Frequência cardíaca max.">
+        <input type="text" id="newExang" placeholder="Angina">
+        <input type="text" id="newOldpeak" placeholder="Depressão ST">
+        <input type="text" id="newSlope" placeholder="Inclinação ST">
+        <input type="text" id="newCa" placeholder="Vasos fluoroscópicos">
+        <input type="text" id="newThal" placeholder="Talassemia">
+        <span onclick="newItem()" class="addBtn">Diagnosticar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Dor no peito</th>
+                <th>Pressão Sanguínea</th>
+                <th>Colesterol sérico</th>
+                <th>Açucar no sangue</th>
+                <th>Resultados eletrocardiográficos</th>
+                <th>Frequência cardíaca max.</th>
+                <th>Angina</th>
+                <th>Depressão ST</th>
+                <th>Inclinação ST</th>
+                <th>Vasos fluoroscópicos</th>
+                <th>Talassemia</th>
+                <th>Diagnóstico</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
